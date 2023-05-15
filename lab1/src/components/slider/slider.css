@@ -1,0 +1,89 @@
+.slider {
+    position: relative;
+    height: 60vh;
+    width: 90%;
+    max-width: 800px;
+    margin: 10px auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  
+  .slider-wrapper {
+    position: relative;
+    height: 85%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .slider-wrapper img {
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 95%;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-top: 3%;
+  }
+  
+  .prev,
+  .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5%;
+    max-width: 50px;
+    padding: 15px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: rgb(4, 193, 26);
+  }
+  
+  .prev:hover,
+  .next:hover {
+    background-color: rgb(3, 149, 5);
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+  
+  .slide-btns {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+  }
+  
+  .slide-btns button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: rgb(4, 193, 26);
+    cursor: pointer;
+  }
+  
+  .slide-btns button:hover {
+    background-color: rgb(3, 149, 5);
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  
+  
