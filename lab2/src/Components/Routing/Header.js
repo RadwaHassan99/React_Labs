@@ -53,7 +53,7 @@ let Header = () => {
               style={({ isActive }) => ({
                 color: isActive ? "#96AED0" : "lightgray",
               })}
-              to="/khaiff"
+              to="/error"
             >
               Error
             </NavLink>
