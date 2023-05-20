@@ -1,0 +1,26 @@
+#allArtists {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 50px;
+    height: 100vh;
+  }
+  
+  #allArtists::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../../../public/assets/cover.jpeg);
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px); 
+    z-index: -1;
+  }
+  

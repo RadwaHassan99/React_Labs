@@ -1,0 +1,19 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(149, 0, 139);
+    
+  }
+  
+  .navbar h2 {
+    font-style: italic;
+    color: white;
+    margin: 0;
+    padding: 10px;
+  }
+
+  .navbar h2:hover{
+    cursor: pointer;
+  }
+  

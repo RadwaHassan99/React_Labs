@@ -1,0 +1,105 @@
+:root {
+    --animation-speed: 2s;
+    --primary-color: #dbd4e6;
+    --secondary-color: #000;
+    --background-color: #212121;
+    --border-radius: 0.5rem;
+    --text-color: #fff;
+    --font: "Rubik", sans-serif;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .artist-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .card {
+    background: var(--primary-color);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    user-select: none;
+    cursor: pointer;
+  }
+  
+  .card img {
+    z-index: 1;
+    width: 100%;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .card img:hover {
+    transform: scale(1.2);
+}
+  
+  .info {
+    z-index: 1;
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+  
+  .info h5 {
+    font-size: 1.05rem;
+    margin-top: 20%;
+    color: white;
+  }
+  
+  
+  
+  .info span ion-icon {
+    margin-right: 0.2rem;
+  }
+  
+  #artistCard {
+    width: 250px;
+    height: 300px;
+    background: #07182E;
+    position: relative;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  
+  #artistCard h2 {
+    z-index: 1;
+    color: white;
+    font-size: 2em;
+  }
+  
+  #artistCard::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+    height: 130%;
+    animation: rotBGimg 10s linear infinite;
+    transition: all 20s linear;
+  }
+  
+  @keyframes rotBGimg {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  #artistCard::after {
+    content: '';
+    position: absolute;
+    background: #07182E;
+    inset: 5px;
+    border-radius: 15px;
+  } 
